@@ -41,7 +41,9 @@ struct _snowflake_state {
     long int time_shift_bits;
     long int region_shift_bits;
     long int worker_shift_bits;
-} snowflake_global_state;
+};
+
+extern struct _snowflake_state snowflake_global_state;
 
 long int snowflake_id();
 int snowflake_init(int region_id, int worker_id);

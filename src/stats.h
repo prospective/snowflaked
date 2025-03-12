@@ -35,8 +35,9 @@ struct _app_stats {
     int region_id;
     int worker_id;
     long int seq_cap;
-} app_stats;
+};
 
+extern struct _app_stats app_stats;
 
 
 #endif
